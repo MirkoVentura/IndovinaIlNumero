@@ -23,7 +23,7 @@ public class IndovinaIlNumero {
             } else if (tentativo > numeroDaIndovinare) {
                 System.out.println("Troppo alto! Riprova.");
             } else {
-                System.out.println("\n🎉 Complimenti! Hai indovinato!");
+                System.out.println("\n :) Complimenti! Hai indovinato!");
                 System.out.println("Il numero era: " + numeroDaIndovinare);
                 System.out.println("Tentativi impiegati: " + tentativi);
                 break;
