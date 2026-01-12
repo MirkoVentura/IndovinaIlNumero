@@ -2,6 +2,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class IndovinaIlNumero {
+    private static final int MAX_TENTATIVI = 5;
+
     public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
@@ -14,6 +16,13 @@ public class IndovinaIlNumero {
         System.out.println("Ho pensato un numero tra 1 e 100. Prova a indovinarlo!");
         
         while (true) {
+            if(tentativi == MAX_TENTATIVI){
+                System.out.println("Tentativi esauriti!");
+                break;
+            } else if(tentativi == MAX_TENTATIVI-1){
+                System.out.println("Ultimo tentativo");
+            }
+
             System.out.print("\nInserisci il tuo tentativo: ");
             tentativo = scanner.nextInt();
             tentativi++;
