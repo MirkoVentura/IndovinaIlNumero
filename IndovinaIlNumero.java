@@ -10,11 +10,23 @@ public class IndovinaIlNumero {
         int tentativi = 0;
         int tentativo;
         
-        System.out.println("=== INDOVINA IL NUMERO ===");
-        System.out.println("Ho pensato un numero tra 1 e 100. Prova a indovinarlo!");
         
-        while (true) {
-            System.out.print("\nInserisci il tuo tentativo: ");
+        
+        IndovinaIlNumero.menu();
+        scanner.close();
+    }
+
+    private static void menu(){
+        System.out.println("-------MENU-------");
+        System.out.println("\n1.Avvia gioco");
+        System.out.println("\n2.Esci dal gioco");
+        System.out.println("-------------------");
+    }
+
+    
+
+    /*
+    System.out.print("\nInserisci il tuo tentativo: ");
             tentativo = scanner.nextInt();
             tentativi++;
             
@@ -27,9 +39,6 @@ public class IndovinaIlNumero {
                 System.out.println("Il numero era: " + numeroDaIndovinare);
                 System.out.println("Tentativi impiegati: " + tentativi);
                 break;
-            }
-        }
-        
-        scanner.close();
-    }
+            }*/
 }
+
